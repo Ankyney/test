@@ -17,7 +17,7 @@ public class Main {
         ArrayList<Product> sp = new ArrayList<>();
         sp.add(new Product("may tinh macbook", "mt", 36.1));
         sp.add(new Product("may tinh dell", "mt", 17.1));
-        sp.add(new Product("may tinh asus", "mt", 16.1));
+        sp.add(new Product("may tinh asus", "mt", 17.1));
         sp.add(new Product("may tinh lenovo", "mt", 15.1));
         sp.add(new Product("tu lanh aaaa", "tl", 8.1));
         sp.add(new Product("tu lanh cici", "tl", 5.1));
@@ -47,19 +47,14 @@ public class Main {
         }
         System.out.println();
         System.out.println("-------------------------------------");
-        System.out.println("Sắp xếp theo tên sản phẩm tăng dần : ");
+        System.out.println("Sắp xếp theo tên sản phẩm tăng dần và giá giảm dần: ");
         Collections.sort(sp1, new SortByName());
-        for (Product x : sp1) {
-            System.out.println(x);
-        }
-
-        System.out.println();
-        System.out.println("-------------------------------------");
-        System.out.println("Sắp xếp theo giá sản phẩm giảm dần : ");
         Collections.sort(sp1, new SortByPrice());
         for (Product x : sp1) {
             System.out.println(x);
         }
+
+
 
     }
 
